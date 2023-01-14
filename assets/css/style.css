@@ -93,6 +93,15 @@
     border-radius: 1em;
     width: 1100px;
 }
+.blockriweh {
+    position: relative;
+    text-align: center;
+    background-color: rgba(22, 122, 236, 0.719);
+    height: 50px;
+    left: 50px;
+    border-radius: 0.5em;
+    width: 100px;
+}
 .riwehh {
     position: relative;
     left: 50px;
@@ -221,8 +230,10 @@
     text-align:center
 }
 .category__product {
+    position: relative;
+    left: 50px;
     display:grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:repeat(4, 0fr);
     gap:2rem 2.5rem
 }
 @media only screen and (max-width: 37.5em){.category__product{grid-template-columns:repeat(3, 1fr);gap:1.5rem 1rem}}
