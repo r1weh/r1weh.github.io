@@ -417,6 +417,13 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
+.riwehblock {
+  position: relative;
+  left: 50px;
+  width: 250px;
+  background-color: rgb(1, 7, 15);
+  border-radius:1rem
+}
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
