@@ -18,26 +18,130 @@
     <link rel="shortcut icon" href="assets/img/rw-Music.png" type="image/x-icon">
     <title>Riweh Script - Fivem [IND]</title>
 </head>
+<style type="text/css">
+  .fab-container {
+        position: fixed;
+        bottom: 70px;
+        right: 10px;
+        z-index: 999;
+        cursor: pointer;
+    }
+    .fab-icon-holder {
+        width: 45px;
+        height: 45px;
+        bottom: 140px;
+        left: 10px;
+        color: #FFF;
+        background: #5865f2;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 99999;
+    }
+
+    .fab-icon-holder:hover {
+        opacity: 0.8;
+    }
+
+    .fab-icon-holder i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    .fab-options {
+        list-style-type: none;
+        margin: 0;
+        position: absolute;
+        bottom: 48px;
+        left: -37px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        transform: scale(0);
+        transform-origin: 85% bottom;
+    }
+
+    .fab:hover+.fab-options,
+    .fab-options:hover {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .fab-options li {
+        display: flex;
+        justify-content: flex-start;
+        padding: 5px;
+    }
+
+    .fab-label {
+        padding: 2px 5px;
+        align-self: center;
+        user-select: none;
+        white-space: nowrap;
+        border-radius: 3px;
+        font-size: 16px;
+        background: #666666;
+        color: #ffffff;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        margin-left: 10px;
+    }
+</style>
 <body>
   <div style="background-color: rgba(228, 202, 202, 0.699);">
-  <header id="header" class="fixed-top d-flex align-items-center" style="background-color: rgba(8, 5, 5, 0.685);">
-    <div class="container d-flex align-items-center justify-content-between">
+<header class="mb-5">
+<nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark shadow ">
+<div class="container">
+<div class="d-flex">
+<span class="w-100 d-lg-none d-block">
 
-      <div class="logo">
-        <a href="https://r1weh.github.io/" class="category__product-container">
-        <img src="assets/img/rw-Music.png" alt="" style="position: relative; border-radius: 0.5em; bottom: -15px;">
-        <h1 style="position: relative; font-size: x-large; left: 60px; bottom: 20px; color: aliceblue">Riweh Script</h1>
-      </a>
-      </div>
-
-      <div class="blockriweh" style="position:relative; left: 10px;">
-        <a href="https://discord.gg/74fVYrKNSs" class="category__product-container">
-            <h3 style="text-align: center; position: relative; bottom: -12px; font-size: large; color: aliceblue;">Discord</h3>
-          </a>
-    </div>
-  </header>
-  <br><br><br><br>
-  <div class="carousel-inner">
+</span>
+<a class="navbar-brand d-none d-lg-inline-block" href="https://r1weh.github.io">
+<img src="assets/img/rw-Music.png" alt="LOGO" height="40px" class="bi me-2" style="position: relative; border-radius: 1em;">
+Riweh Script
+</a>
+<a class="navbar-brand mx-auto d-lg-none d-inline-block" href="https://r1weh.github.io">
+<img src="assets/img/rw-Music.png" alt="LOGO" height="40px" class="bi me-2">
+</a>
+</div>
+<div class="d-flex">
+</div>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse text-right" id="navbarTogglerDemo03">
+<ul class="navbar-nav ms-auto nav-stacked">
+<li class="nav-item">
+<a href="https://r1weh.github.io" class="nav-link ">
+Home</a>
+</li>
+<div class="dropdown">
+<button style="color: rgba(255, 255, 255, 0.55);" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+<i class=""></i> About us
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+<li class="nav-item">
+<a style="color: #000000;" href="#home" class="nav-link">Apa itu RW?</a>
+</li>
+<li class="nav-item">
+<a style="color: #000000;" href="#avengers" class="nav-link">Team Avengers</a>
+</li>
+<li class="nav-item">
+<a style="color: #000000;" href="https://r1weh.github.io/rw-starterpack" class="nav-link">Butuh Bantuan?</a>
+</li>
+</ul>
+</div>
+<li class="nav-item pe-md-2 dropdown d-lg-inline-block d-none">
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+  <br><br>
+  <div id="home" class="carousel-inner">
       <br><br>
         <center>
         <div class="block2">
@@ -50,7 +154,7 @@
 <div class="section-title" style="position: relative; bottom: 35px;">
     <h2></h2>
 </div>
-    <div id="home" class="section-title">
+    <div class="section-title">
         <h2>Riweh Script</h2>
         <h1 style="font-size: large;">Menyediakan Script Gratis Maupun berbayar <br> Ingat yang saya bagikan ada berbagai macam,Terutama Custom Saya Sendiri juga ^^ <br> Jika Kalian mengalami bug dengan script yang saya kasih,saya akan kasih jaminan kepada anda semua <br>saya akan bantu anda semaksimal mungkin ^^</h1>
       </div>
@@ -227,10 +331,10 @@
                         </div>
                         </div>
             </section>
-<section class="category category--3">
+<section id="avengers" class="category category--3">
 <div class="category__container">
 <div class="section-title">
-  <h2>Team Avangers R1weh</h2>
+  <h2>Team Avengers R1weh</h2>
 </div>
 <br>
 <div class="category__product">
@@ -260,45 +364,40 @@
   </div>
  </body>
  <div style="background-color: rgba(228, 202, 202, 0.699);">
- <footer class="footer" style="height: 50px; background-color: rgba(228, 202, 202, 0.699);">
-  <div class="footer__container">
-     <div class="footer__content">
-        <section class="left-content">
-           <div class="social">
-              <h5 class="social__title">Discord Comunitty</h5>
-              <div class="social__content">
-                 <a href="https://discord.gg/74fVYrKNSs" class="social__link">
-                    <img src="https://cdn.discordapp.com/attachments/993491863791218730/1062860852564340778/discord.png" class="social__icon" alt="">
-                 </a>
-              </div>
-           </div>
-           <div class="support">
-              <h5 class="support__title">Need Help?</h5>
-              <a href="https://riweh-script.gitbook.io/riweh" class="support__link">
-                 <img src="assets/img/rw-Music.png" class="country__img" alt="">
-                 <span class="support__text">Click for help</span>
-              </a>
-           </div>
-           <div class="country">
-              <img src="assets/img/indonesia.png" class="country__img" alt="">
-              <h5 class="country__title">Indonesia</h5>
-           </div>
-        </section>
-        <section class="right-content">
-           <div class="legal-content">
-            <div class="riwehhhh">
-              <a href="#">
-                <img src="assets/img/rw-Music.png" class="country__img" alt="">
-              </a>
-              <a href="">
-                <img src="https://cdn.discordapp.com/attachments/993491863791218730/1062860852564340778/discord.png" class="social__icon" alt="" style="position: relative; width: 150px; bottom: 40px;">
-              </a>
-            </div>
-              <p class="legal-content__copyright">&copy; Riweh Script - Fivem</p>
-           </div>
-        </section>
-     </div>
-  </div>
-</div>
-</footer>
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Avengers Team</strong>. All Rights Reserved
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="https://r1weh.github.io/" class="category__product-container">Home</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="fab-container">
+    <div class="fab fab-icon-holder" style="background-color:#FFF; padding:5px">
+    <img src="https://media.discordapp.net/attachments/993491863791218730/1064830778342641674/callcenter.png" class="img-fluid" alt="">
+    </div>
+    <ul class="fab-options">
+     <li>
+    <a href="https://discord.gg/74fVYrKNSs" class="text-decoration-none" target="_blank">
+    <div class="fab-icon-holder" style="background-color: #5865F2;">
+    <img src="https://i.redd.it/s9biyhs4lix61.jpg" class="img-fluid" alt="" style="position: relative; bottom: 5px; width: 30px;">
+    </div>
+    </a>
+    </li>
+    <li>
+      <a href="https://wa.me/6281374359042" class="text-decoration-none" target="_blank">
+      <div class="fab-icon-holder" style="background-color: #e7f5ec;">
+      <img src="assets/img/rw-Music.png" class="img-fluid" alt="" style="position: relative; bottom: 5px; width: 30px;">
+      </div>
+      </a>
+      </li>
+    </ul>
  </html>
